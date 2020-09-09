@@ -20,4 +20,6 @@ class LinearMemory:
     
     def __getitem__(self, key):
         return self.memory[key]
-        
+    
+    def show(self):
+        print(f"State of memory -> {self.memory}")
