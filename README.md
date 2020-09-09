@@ -1,6 +1,12 @@
 # Super Simple Computer
 This project simulates the Instruction Set of a hypothetical computer.
 
+## How to run this project?
+```
+$ pip3 install -r requirements.txt
+$ python3 runner.py
+```
+
 Basic components that are required:
   1. Processor
   2. Memory
