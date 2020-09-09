@@ -43,6 +43,24 @@ These are simple text files that contain assembly instructions for Super Simple 
 
 Each instruction takes 1 line
 
+Here is an example for SSA file (named prg1.ssa)
+```
+add 3 1 2
+sub 3 1 2
+```
+
+To generate the machine code for the following assembly code. Do this:
+```
+$ python3 assembler.py prg1.ssa
+```
+This would generate a file called **output.ssmc** which contains the generated machine code.
+
+The machine code for the following SSA file would look like this,
+```
+[1, 1, 2, 3, 2, 1, 2, 3]
+```
+
+
 ## Filenames
   - **.ssa** -> Super Simple Assemnbly file. Text file that contains assmebly instructions for Super Simple Computer (SSC).
   - **.ssmc** -> Super Simple Machine Code. Machine code that would be executed by SSC.
