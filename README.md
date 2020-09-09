@@ -37,3 +37,11 @@ Instruction opcode table:
   - SUB : 2
   - MUL : 3
   - DIV : 4
+
+## Super Simple Assembly (.ssa files)
+These are simple text files that contain assembly instructions for Super Simple Computer. These instructions are processed by the assembler to generate machine code that can be executed by the computer.
+
+Each instruction takes 1 line
+
+## Filenames
+  - **.ssa** -> Super Simple Assemnbly file. Text file that contains assmebly instructions for Super Simple Computer (SSC).
