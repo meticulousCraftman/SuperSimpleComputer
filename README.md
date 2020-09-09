@@ -1,4 +1,4 @@
-# Super Simple Computer
+# Super Simple Computer (SSC)
 This project simulates the Instruction Set of a hypothetical computer.
 
 ## How to run this project?
@@ -45,3 +45,4 @@ Each instruction takes 1 line
 
 ## Filenames
   - **.ssa** -> Super Simple Assemnbly file. Text file that contains assmebly instructions for Super Simple Computer (SSC).
+  - **.ssmc** -> Super Simple Machine Code. Machine code that would be executed by SSC.

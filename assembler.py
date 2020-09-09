@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
+import json
 from loguru import logger
 
 OPCODE_LOOKUP_TABLE = {
@@ -17,9 +18,16 @@ class SimpleAssembler:
         # List of all the instructions in the source file
         self.instructions = self.source_file.split("\n")
 
+        machine_code = []
         for instruction in self.instructions:
             result = self.parse(instruction)
-            print(result)
+            machine_code.extend(result)
+        
+        with open("output.ssmc", "w") as output_file:
+            json.dump(machine_code, output_file)
+        
+        logger.success("Machine code generated and saved in output.ssmc")
+        
         
     
     def parse(self, instruction):
@@ -27,6 +35,7 @@ class SimpleAssembler:
         instruction_token = instruction.split(" ")
         
         operation = instruction_token[0]
+        logger.info(f"Generating code for {operation} instruction")
         opcode = OPCODE_LOOKUP_TABLE[operation]
 
         dest = int(instruction_token[1])
