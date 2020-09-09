@@ -8,8 +8,8 @@ $ python3 runner.py
 ```
 
 Basic components that are required:
-  1. Processor
-  2. Memory
+  1. Processor -> Executes machine code
+  2. Memory -> Area where data can read from or written to.
   3. Loader -> Load instructions from file to memory
   4. Assembler -> Converts program written in text format to binary
   5. Runner -> Setup different parts of the program and run the processor.
